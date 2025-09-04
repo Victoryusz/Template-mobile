@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Academy - Site Fácil</title>
+    <meta name="description" content="Descubra o método que já transformou mais de 10.000 vidas com templates otimizados para SEO, feitos com React + Tailwind, as melhores tecnologias responsivas usadas por grandes empresas como Meta e Facebook.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- SEÇÃO 1: HEADLINE -->
+    <section class="headline-section" id="headline">
+        <div class="container">
+            <h1 class="main-headline">
+                Descubra o <span class="highlight">Método SIMPLES</span> 
+                Para ter um site moderno com custo quase ZERO.
+            </h1>
+            <p class="sub-headline">
+                Sem complicação, sem enrolação. Seu site em menos de 24 Horas, otimizado para SEO e feito com as melhores tecnologias responsivas como React + Tailwind, usadas por gigantes como Meta e Facebook.
+            </p>
+            <div class="headline-cta">
+                <button class="btn-primary" onclick="scrollToSection('vsl')">
+                    Assistir Vídeo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 2: VÍDEO VSL -->
+    <section class="vsl-section" id="vsl">
+        <div class="container">
+            <h2 class="section-title">Assista ao Vídeo e tire suas conclusoes</h2>
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <div class="play-button" onclick="playVideo()">
+                        <span>▶</span>
+                    </div>
+                    <p>Clique para assistir ao vídeo exclusivo</p>
+                </div>
+                <!-- Substituir por seu vídeo real -->
+                <video id="mainVideo" style="display: none;" controls>
+                    <source src="assets/videos/vsl.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos HTML5.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 3: LEAD CAPTURE -->
+    <section class="lead-section" id="lead">
+        <div class="container">
+            <div class="lead-box">
+                <h3>🎁 Receba Gratuitamente o Guia Exclusivo</h3>
+                <p>Deixe seu email e ganhe acesso ao material complementar</p>
+                <form class="lead-form" id="leadForm">
+                    <input type="text" placeholder="Seu melhor nome" required>
+                    <input type="email" placeholder="Seu melhor email" required>
+                    <button type="submit" class="btn-secondary">
+                        Quero Receber Grátis
+                    </button>
+                </form>
+                <p class="privacy-note">
+                    🔒 Seus dados estão seguros conosco
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 4: HISTÓRIA -->
+    <section class="story-section" id="story">
+        <div class="container">
+            <h2 class="section-title">Minha História (E Como Isso Pode Mudar a Sua)</h2>
+            <div class="story-content">
+                <div class="story-text">
+                    <p>Há 3 anos, eu estava exatamente onde você está agora...</p>
+                    <p>Tentando de tudo, mas sem conseguir os resultados que queria.</p>
+                    <p>Foi então que descobri este método que mudou completamente minha vida.</p>
+                    <p><strong>E hoje quero compartilhar isso com você.</strong></p>
+                </div>
+                <div class="story-image">
+                    <!-- IMAGEM REAL ADICIONADA -->
+                    <img src="assets/images/criador.jpg" alt="Foto do criador da Template Academy" style="width: 100%; border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 5: PITCH -->
+    <section class="pitch-section" id="pitch">
+        <div class="container">
+            <h2 class="section-title">Apresento: A Template Academy</h2>
+            <div class="pitch-content">
+                <div class="pitch-benefits">
+                    <h3>Com este método você vai conseguir:</h3>
+                    <ul class="benefits-list">
+                        <li>✅ Templates otimizados para SEO, garantindo visibilidade nos motores de busca</li>
+                        <li>✅ Sites feitos com React + Tailwind, as melhores e mais responsivas tecnologias da atualidade</li>
+                        <li>✅ Design moderno e adaptável, usado por grandes empresas como Meta e Facebook</li>
+                        <li>✅ Resultados rápidos e profissionais sem complicações técnicas</li>
+                    </ul>
+                </div>
+                <div class="pitch-visual">
+                    <div class="product-image">
+                        <!-- IMAGEM REAL ADICIONADA -->
+                        <img src="assets/images/produto.jpg" alt="Template Academy - Produto" style="width: 100%; border-radius: 10px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 6: EVIDÊNCIAS -->
+    <section class="evidence-section" id="evidence">
+        <div class="container">
+            <h2 class="section-title">Veja o Que Nossos Clientes Estão Dizendo</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <!-- IMAGEM REAL ADICIONADA -->
+                        <img src="assets/images/cliente1.jpg" alt="Maria Silva" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
+                    </div>
+                    <p class="testimonial-text">
+                        "Resultado incrível! Em apenas 15 dias já vi mudanças significativas..."
+                    </p>
+                    <p class="testimonial-author">- Maria Silva, São Paulo</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <!-- IMAGEM REAL ADICIONADA -->
+                        <img src="assets/images/cliente2.jpg" alt="João Santos" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
+                    </div>
+                    <p class="testimonial-text">
+                        "Nunca pensei que seria tão fácil. Recomendo para todos!"
+                    </p>
+                    <p class="testimonial-author">- João Santos, Rio de Janeiro</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <!-- IMAGEM REAL ADICIONADA -->
+                        <img src="assets/images/cliente3.jpg" alt="Ana Costa" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
+                    </div>
+                    <p class="testimonial-text">
+                        "Mudou minha vida completamente. Valeu cada centavo!"
+                    </p>
+                    <p class="testimonial-author">- Ana Costa, Brasília</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 7: OFERTA -->
+    <section class="offer-section" id="offer">
+        <div class="container">
+            <h2 class="section-title">Oferta Especial - Por Tempo Limitado</h2>
+            <div class="offer-box">
+                <div class="price-container">
+                    <p class="original-price">De: <span>R$ 497,00</span></p>
+                    <p class="current-price">Por apenas: <span>R$ 97,00</span></p>
+                </div>
+                
+                <div class="countdown-timer" id="countdown">
+                    <p>Oferta expira em:</p>
+                    <div class="timer">
+                        <span id="hours">00</span>h
+                        <span id="minutes">00</span>m
+                        <span id="seconds">00</span>s
+                    </div>
+                </div>
+                
+                <div class="bonuses">
+                    <h4>🎁 Bônus Exclusivos:</h4>
+                    <ul>
+                        <li>✅ Bônus #1 (Valor: R$ 197)</li>
+                        <li>✅ Bônus #2 (Valor: R$ 97)</li>
+                        <li>✅ Bônus #3 (Valor: R$ 147)</li>
+                    </ul>
+                </div>
+                
+                <button class="btn-buy" onclick="redirectToBuy()">
+                    🛒 Quero Garantir Minha Vaga Agora
+                </button>
+                
+                <div class="guarantee">
+                    <p>🛡️ <strong>Garantia de 30 dias</strong> - Risco zero para você</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 8: FAQ -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Como funciona exatamente?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>É muito simples! Você recebe acesso imediato ao conteúdo...</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Quanto tempo leva para ver resultados?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A maioria dos nossos clientes vê primeiros resultados em até 7 dias...</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Funciona para qualquer pessoa?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Nosso método foi testado com mais de 10.000 pessoas...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 9: CTA FINAL -->
+    <section class="final-cta-section" id="final-cta">
+        <div class="container">
+            <h2>Não Deixe Esta Oportunidade Passar</h2>
+            <p>Sua vida pode mudar a partir de hoje. Faça a escolha certa.</p>
+            <button class="btn-buy-final" onclick="redirectToBuy()">
+                🚀 Sim, Eu Quero Transformar Minha Vida Agora
+            </button>
+            <p class="urgency-text">⏰ Restam poucas vagas disponíveis</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+            <p><a href="politica.html">Política de Privacidade</a> | <a href="termos.html">Termos de Uso</a></p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/tracking.js"></script>
+    
+</body>
+</html>

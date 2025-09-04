@@ -1,0 +1,295 @@
+/* ===== RESPONSIVIDADE MOBILE ===== */
+
+/* Tablets */
+@media (max-width: 768px) {
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    /* HEADLINE */
+    .main-headline {
+        font-size: 2.5rem;
+    }
+    
+    .sub-headline {
+        font-size: 1.2rem;
+    }
+    
+    /* STORY */
+    .story-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    /* PITCH */
+    .pitch-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    /* TESTIMONIALS */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* BUTTONS */
+    .btn-primary, .btn-secondary, .btn-buy, .btn-buy-final {
+        padding: 15px 25px;
+        font-size: 1rem;
+    }
+    
+    /* LEAD BOX */
+    .lead-box {
+        padding: 30px;
+        margin: 0 15px;
+    }
+    
+    /* OFFER BOX */
+    .offer-box {
+        padding: 30px;
+        margin: 0 15px;
+    }
+    
+    .current-price {
+        font-size: 2rem;
+    }
+    
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    
+    .container {
+        padding: 0 10px;
+    }
+    
+    /* SECTIONS PADDING */
+    .headline-section,
+    .vsl-section,
+    .lead-section,
+    .story-section,
+    .pitch-section,
+    .evidence-section,
+    .offer-section,
+    .faq-section,
+    .final-cta-section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* HEADLINE */
+    .main-headline {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .sub-headline {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+    
+    /* STORY TEXT */
+    .story-text p {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* BENEFITS LIST */
+    .benefits-list {
+        font-size: 1.1rem;
+    }
+    
+    /* TESTIMONIAL CARDS */
+    .testimonial-card {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .testimonial-text {
+        font-size: 1rem;
+    }
+    
+    /* LEAD FORM */
+    .lead-form input {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+    
+    /* BUTTONS */
+    .btn-primary, .btn-secondary {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .btn-buy, .btn-buy-final {
+        padding: 15px 20px;
+        font-size: 1.1rem;
+    }
+    
+    /* LEAD BOX */
+    .lead-box {
+        padding: 25px;
+        margin: 0 10px;
+    }
+    
+    .lead-box h3 {
+        font-size: 1.6rem;
+    }
+    
+    /* OFFER BOX */
+    .offer-box {
+        padding: 25px;
+        margin: 0 10px;
+    }
+    
+    .current-price {
+        font-size: 1.8rem;
+    }
+    
+    .timer {
+        font-size: 1.2rem;
+    }
+    
+    /* FAQ */
+    .faq-question {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+    
+    .faq-answer {
+        padding: 0 15px;
+    }
+    
+    .faq-answer.active {
+        padding: 15px;
+    }
+    
+    /* FINAL CTA */
+    .final-cta-section h2 {
+        font-size: 2rem;
+    }
+    
+    .final-cta-section p {
+        font-size: 1.1rem;
+    }
+    
+    .urgency-text {
+        font-size: 1rem;
+    }
+    
+    /* VIDEO */
+    .play-button {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    /* BONUSES */
+    .bonuses {
+        text-align: center;
+    }
+    
+    .bonuses li {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    /* FOOTER */
+    .footer {
+        padding: 20px 0;
+        font-size: 0.9rem;
+    }
+    
+}
+
+/* Landscape Mobile */
+@media (max-width: 480px) and (orientation: landscape) {
+    
+    .headline-section {
+        padding: 50px 0;
+        min-height: auto;
+    }
+    
+    .main-headline {
+        font-size: 1.8rem;
+    }
+    
+    .sub-headline {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+    
+    .main-headline {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .current-price {
+        font-size: 1.6rem;
+    }
+    
+    .btn-buy, .btn-buy-final {
+        font-size: 1rem;
+        padding: 12px 15px;
+    }
+    
+    .lead-box,
+    .offer-box {
+        padding: 20px;
+    }
+    
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    
+    .image-placeholder,
+    .testimonial-image,
+    .product-image {
+        background-size: cover;
+        background-position: center;
+    }
+    
+}
+
+/* Print Styles */
+@media print {
+    
+    .headline-section,
+    .vsl-section,
+    .lead-section,
+    .final-cta-section {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    .section-title {
+        font-size: 18pt;
+        margin-bottom: 12pt;
+    }
+    
+}
