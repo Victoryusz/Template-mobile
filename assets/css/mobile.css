@@ -1,295 +1,599 @@
-/* ===== RESPONSIVIDADE MOBILE ===== */
+/* ===== RESPONSIVIDADE MOBILE PERSONALIZADA ===== */
 
 /* Tablets */
 @media (max-width: 768px) {
-    
     .container {
         padding: 0 15px;
     }
-    
+
     .section-title {
         font-size: 2rem;
         margin-bottom: 2rem;
     }
-    
+
+    /* LOGO */
+    .logo-container {
+        margin-bottom: 1.5rem;
+    }
+
+    .logo {
+        max-width: 150px;
+    }
+
     /* HEADLINE */
     .main-headline {
         font-size: 2.5rem;
+        line-height: 1.2;
     }
-    
+
     .sub-headline {
         font-size: 1.2rem;
+        margin-bottom: 2.5rem;
     }
-    
-    /* STORY */
-    .story-content {
+
+    /* SOLUÇÃO */
+    .solution-content {
         grid-template-columns: 1fr;
         gap: 30px;
         text-align: center;
     }
-    
-    /* PITCH */
-    .pitch-content {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        text-align: center;
+
+    .step {
+        justify-content: center;
+        text-align: left;
+        max-width: 400px;
+        margin: 0 auto 1.5rem;
     }
-    
+
+    /* MÓDULOS */
+    .modules-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .module-card {
+        padding: 25px;
+    }
+
+    .module-card.featured::after {
+        top: -8px;
+        right: 10px;
+        font-size: 0.75rem;
+        padding: 3px 10px;
+    }
+
+    /* PROBLEMAS */
+    .problems-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .problem-card {
+        padding: 25px;
+    }
+
     /* TESTIMONIALS */
     .testimonials-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
-    
+
+    .testimonial-card {
+        padding: 25px;
+    }
+
     /* BUTTONS */
     .btn-primary, .btn-secondary, .btn-buy, .btn-buy-final {
         padding: 15px 25px;
         font-size: 1rem;
     }
-    
+
+    .btn-buy, .btn-buy-final {
+        padding: 18px 30px;
+        font-size: 1.2rem;
+    }
+
     /* LEAD BOX */
     .lead-box {
         padding: 30px;
         margin: 0 15px;
     }
-    
+
+    .lead-box h3 {
+        font-size: 1.7rem;
+    }
+
     /* OFFER BOX */
     .offer-box {
         padding: 30px;
         margin: 0 15px;
     }
-    
+
     .current-price {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
-    
+
+    .timer {
+        font-size: 1.5rem;
+    }
+
+    .bonuses {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .bonuses ul {
+        text-align: left;
+    }
 }
 
 /* Mobile */
 @media (max-width: 480px) {
-    
     .container {
         padding: 0 10px;
     }
-    
+
     /* SECTIONS PADDING */
     .headline-section,
     .vsl-section,
     .lead-section,
-    .story-section,
-    .pitch-section,
+    .problem-section,
+    .solution-section,
+    .modules-section,
     .evidence-section,
     .offer-section,
     .faq-section,
     .final-cta-section {
         padding: 60px 0;
     }
-    
+
     .section-title {
         font-size: 1.8rem;
         margin-bottom: 1.5rem;
+        line-height: 1.3;
     }
-    
+
     /* HEADLINE */
+    .headline-section {
+        padding: 80px 0;
+        min-height: auto;
+    }
+
     .main-headline {
         font-size: 2rem;
         margin-bottom: 1.5rem;
+        line-height: 1.2;
     }
-    
+
     .sub-headline {
         font-size: 1.1rem;
         margin-bottom: 2rem;
+        line-height: 1.5;
     }
-    
-    /* STORY TEXT */
-    .story-text p {
+
+    .logo {
+        max-width: 120px;
+    }
+
+    .footer .logo {
+        max-width: 100px;
+        margin: 0 auto 1rem auto; /* Centraliza horizontalmente e adiciona margem inferior */
+        display: block; /* Garante alinhamento como bloco */
+        filter: brightness(0) invert(1); /* Mantém a logo branca */
+    }
+
+    /* SOLUTION */
+    .solution-text h3 {
+        font-size: 1.8rem;
+    }
+
+    .solution-text p {
         font-size: 1.1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
     }
-    
-    /* BENEFITS LIST */
-    .benefits-list {
+
+    .step {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        max-width: none;
+        margin-bottom: 2rem;
+    }
+
+    .step-number {
+        margin-bottom: 10px;
+    }
+
+    .before-after {
+        gap: 15px;
+    }
+
+    .before, .after {
+        padding: 20px;
+    }
+
+    /* MÓDULOS */
+    .module-card {
+        padding: 20px;
+    }
+
+    .module-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .module-card li {
+        font-size: 0.95rem;
+    }
+
+    .module-card.featured::after {
+        font-size: 0.7rem;
+        padding: 2px 8px;
+    }
+
+    /* PROBLEMAS */
+    .problem-card {
+        padding: 20px;
+    }
+
+    .problem-icon {
+        font-size: 2.5rem;
+    }
+
+    .problem-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .problem-conclusion {
         font-size: 1.1rem;
+        margin-top: 2rem;
     }
-    
+
     /* TESTIMONIAL CARDS */
     .testimonial-card {
         padding: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
-    
+
     .testimonial-text {
         font-size: 1rem;
+        margin: 1rem 0;
     }
-    
+
+    .avatar {
+        font-size: 2.5rem;
+    }
+
     /* LEAD FORM */
     .lead-form input {
-        padding: 12px;
-        font-size: 0.9rem;
+        padding: 15px;
+        font-size: 0.95rem;
     }
-    
-    /* BUTTONS */
-    .btn-primary, .btn-secondary {
-        padding: 12px 20px;
-        font-size: 0.9rem;
-    }
-    
-    .btn-buy, .btn-buy-final {
-        padding: 15px 20px;
-        font-size: 1.1rem;
-    }
-    
-    /* LEAD BOX */
+
     .lead-box {
         padding: 25px;
         margin: 0 10px;
     }
-    
+
     .lead-box h3 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
-    
+
+    /* BUTTONS */
+    .btn-primary, .btn-secondary {
+        padding: 14px 20px;
+        font-size: 0.95rem;
+    }
+
+    .btn-buy, .btn-buy-final {
+        padding: 16px 20px;
+        font-size: 1.1rem;
+    }
+
     /* OFFER BOX */
     .offer-box {
         padding: 25px;
         margin: 0 10px;
     }
-    
+
+    .price-container {
+        padding: 15px;
+    }
+
     .current-price {
-        font-size: 1.8rem;
-    }
-    
-    .timer {
-        font-size: 1.2rem;
-    }
-    
-    /* FAQ */
-    .faq-question {
-        padding: 15px;
-        font-size: 0.9rem;
-    }
-    
-    .faq-answer {
-        padding: 0 15px;
-    }
-    
-    .faq-answer.active {
-        padding: 15px;
-    }
-    
-    /* FINAL CTA */
-    .final-cta-section h2 {
         font-size: 2rem;
     }
-    
-    .final-cta-section p {
+
+    .timer {
+        font-size: 1.3rem;
+    }
+
+    .countdown-timer {
+        padding: 20px;
+    }
+
+    .bonuses {
+        padding: 20px;
+        margin: 1.5rem 0;
+    }
+
+    .bonuses h4 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .bonuses li {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .bonus-total {
         font-size: 1.1rem;
     }
-    
-    .urgency-text {
+
+    .guarantee {
+        padding: 15px;
+        margin: 1.5rem 0;
+    }
+
+    .payment-options p {
+        font-size: 0.9rem;
+    }
+
+    /* FAQ */
+    .faq-question {
+        padding: 20px;
         font-size: 1rem;
     }
-    
+
+    .faq-answer {
+        padding: 0 20px;
+    }
+
+    .faq-answer.active {
+        padding: 20px;
+    }
+
+    .faq-answer p {
+        font-size: 0.95rem;
+    }
+
+    /* FINAL CTA */
+    .final-cta-section {
+        padding: 80px 0;
+    }
+
+    .final-cta-section h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .final-cta-section p {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .urgency-text {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
     /* VIDEO */
     .play-button {
         width: 60px;
         height: 60px;
         font-size: 1.5rem;
     }
-    
-    /* BONUSES */
-    .bonuses {
-        text-align: center;
-    }
-    
-    .bonuses li {
-        font-size: 1rem;
-        margin-bottom: 0.8rem;
-    }
-    
+
     /* FOOTER */
     .footer {
-        padding: 20px 0;
+        padding: 30px 0;
         font-size: 0.9rem;
     }
-    
 }
 
 /* Landscape Mobile */
 @media (max-width: 480px) and (orientation: landscape) {
-    
     .headline-section {
-        padding: 50px 0;
+        padding: 40px 0;
         min-height: auto;
     }
-    
+
     .main-headline {
         font-size: 1.8rem;
     }
-    
+
     .sub-headline {
         font-size: 1rem;
         margin-bottom: 1.5rem;
     }
+
+    .logo-container {
+        margin-bottom: 1rem;
+    }
+
+    .logo {
+        max-width: 100px;
+        filter: brightness(0) invert(1); /* Mantém a logo branca */
+    }
+
+    .footer .logo {
+        max-width: 80px; /* Reduz o tamanho para landscape */
+        margin: 0 auto 0.5rem auto; /* Ajusta margem para layout landscape */
+        display: block;
+        filter: brightness(0) invert(1); /* Mantém a logo branca */
+    }
     
+    .section-title {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
 }
 
 /* Extra Small Devices */
 @media (max-width: 360px) {
-    
     .main-headline {
         font-size: 1.8rem;
+        line-height: 1.1;
     }
-    
+
     .section-title {
         font-size: 1.6rem;
     }
-    
-    .current-price {
-        font-size: 1.6rem;
+
+    .logo {
+        max-width: 100px;
+        filter: brightness(0) invert(1); /* Mantém a logo branca */
     }
-    
+
+    .footer .logo {
+        max-width: 90px; /* Ajuste fino para telas muito pequenas */
+        margin: 0 auto 0.5rem auto; /* Centraliza e ajusta margem */
+        display: block;
+        filter: brightness(0) invert(1); /* Mantém a logo branca */
+    }
+
+    .current-price {
+        font-size: 1.8rem;
+    }
+
+    .timer {
+        font-size: 1.2rem;
+    }
+
     .btn-buy, .btn-buy-final {
         font-size: 1rem;
-        padding: 12px 15px;
+        padding: 14px 15px;
     }
-    
+
     .lead-box,
     .offer-box {
         padding: 20px;
     }
-    
+
+    .module-card,
+    .problem-card,
+    .testimonial-card {
+        padding: 18px;
+    }
+
+    .solution-text h3 {
+        font-size: 1.6rem;
+    }
+
+    .step-content h4 {
+        font-size: 1rem;
+    }
+
+    .step-content p {
+        font-size: 0.9rem;
+    }
+
+    .problem-icon {
+        font-size: 2rem;
+    }
+
+    .avatar {
+        font-size: 2rem;
+    }
 }
 
 /* High DPI Displays */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    
-    .image-placeholder,
-    .testimonial-image,
-    .product-image {
-        background-size: cover;
-        background-position: center;
+    .logo,
+    .play-button,
+    .step-number,
+    .module-number {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
     }
-    
+}
+
+/* Touch Devices */
+@media (hover: none) {
+    .btn-primary:hover,
+    .btn-secondary:hover,
+    .btn-buy:hover,
+    .btn-buy-final:hover {
+        transform: none;
+    }
+
+    .module-card:hover,
+    .testimonial-card:hover,
+    .problem-card:hover {
+        transform: none;
+    }
+
+    .btn-primary:active,
+    .btn-secondary:active,
+    .btn-buy:active,
+    .btn-buy-final:active {
+        transform: scale(0.98);
+    }
+}
+
+/* Modo Escuro do Sistema */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .section-title,
+    .main-headline {
+        color: #000000;
+    }
 }
 
 /* Print Styles */
 @media print {
-    
     .headline-section,
     .vsl-section,
     .lead-section,
-    .final-cta-section {
+    .final-cta-section,
+    .offer-section {
         display: none;
     }
-    
+
     body {
         font-size: 12pt;
         line-height: 1.4;
+        color: #000000;
+        background: #ffffff;
     }
-    
+
     .section-title {
         font-size: 18pt;
         margin-bottom: 12pt;
+        color: #000000;
     }
-    
+
+    .module-card,
+    .testimonial-card,
+    .problem-card {
+        break-inside: avoid;
+        border: 1pt solid #000000;
+    }
+
+    .logo {
+        filter: none; /* Remove o filtro na impressão para evitar distorções */
+    }
+}
+
+/* Animações reduzidas para quem prefere menos movimento */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .btn-primary:hover,
+    .btn-secondary:hover,
+    .btn-buy:hover,
+    .btn-buy-final:hover,
+    .module-card:hover,
+    .testimonial-card:hover,
+    .problem-card:hover {
+        transform: none;
+    }
 }

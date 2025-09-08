@@ -3,47 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template Academy - Site Fácil</title>
-    <meta name="description" content="Descubra o método que já transformou mais de 10.000 vidas com templates otimizados para SEO, feitos com React + Tailwind, as melhores tecnologias responsivas usadas por grandes empresas como Meta e Facebook.">
-    
-    <!-- CSS -->
+    <title>Template Academy</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <!-- SEÇÃO 1: HEADLINE -->
-    <section class="headline-section" id="headline">
+    <section class="headline-section">
         <div class="container">
-            <h1 class="main-headline">
-                Descubra como ter um site <span class="highlight"> INCRÍVEL</span> 
-                com custo quase ZERO.
-            </h1>
-            <p class="sub-headline">
-                Sem mensalidades absurdas, sem pagar caro para agências. Pague pouco e tenha um site moderno, funcional e pronto para vender.</p>
-            <div class="headline-cta">
-                <button class="btn-primary" onclick="scrollToSection('vsl')">
-                    Assistir Vídeo
-                </button>
+            <div class="logo-container">
+                <img src="assets/images/Logo.webp" alt="Logo Template Academy" class="logo">
             </div>
+            <h1 class="main-headline">Finalmente, um curso que te ensina a <span class="highlight"> vender sites de forma descomplicada.</span></h1>
+            <p class="sub-headline">Tenha acesso a templates prontos e um método simples para conseguir clientes e gerar sua primeira renda extra rapidamente.</p>
+            <a href="#vsl" class="btn-primary">Ver Como Funciona</a>
         </div>
     </section>
 
     <!-- SEÇÃO 2: VÍDEO VSL -->
     <section class="vsl-section" id="vsl">
         <div class="container">
-            <h2 class="section-title">Dê o play e veja como é simples ter um site profissional sem gastar muito.</h2>
+            <h2 class="section-title">Assista como um ex-funcionário criou um negócio de Renda Extra de R$ 3.000 por mês vendendo sites prontos na internet.</h2>
             <div class="video-container">
                 <div class="video-placeholder">
                     <div class="play-button" onclick="playVideo()">
                         <span>▶</span>
                     </div>
-                    <p>Clique para assistir ao vídeo exclusivo</p>
+                    <p>Clique para assistir a transformação completa</p>
                 </div>
-                <!-- Substituir por seu vídeo real -->
                 <video id="mainVideo" style="display: none;" controls>
                     <source src="assets/videos/vsl.mp4" type="video/mp4">
                     Seu navegador não suporta vídeos HTML5.
@@ -56,187 +42,289 @@
     <section class="lead-section" id="lead">
         <div class="container">
             <div class="lead-box">
-                <h3>🎁 Receba Gratuitamente o Guia Exclusivo</h3>
-                <p>Deixe seu email e ganhe acesso ao material complementar</p>
+                <h3>🎁 Receba o Guia Gratuito</h3>
+                <p>O Checklist para Vender seu Primeiro Site Mesmo que Você Nunca Tenha Programado na Vida.</p>
                 <form class="lead-form" id="leadForm">
                     <input type="text" placeholder="Seu nome" required>
                     <input type="email" placeholder="Seu melhor email" required>
                     <button type="submit" class="btn-secondary">
-                        ⬇️​ Receber Grátis
+                        ⬇️​ Quero o Checklist Grátis
                     </button>
                 </form>
                 <p class="privacy-note">
-                    🔒 Seus dados estão seguros conosco
+                    🔒 Seus dados estão protegidos conosco
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- SEÇÃO 4: HISTÓRIA -->
-    <section class="story-section" id="story">
+    <!-- SEÇÃO 4: PROBLEMA -->
+    <section class="problem-section" id="problem">
         <div class="container">
-            <h2 class="section-title">Minha História (E Como Isso Pode Mudar a Sua)</h2>
-            <div class="story-content">
-                <div class="story-text">
-                    <p>Há 3 anos, eu estava exatamente onde você está agora...</p>
-                    <p>Tentando de tudo, mas sem conseguir os resultados que queria.</p>
-                    <p>Foi então que descobri este método que mudou completamente minha vida.</p>
-                    <p><strong>E hoje quero compartilhar isso com você.</strong></p>
+            <h2 class="section-title">Você já se sentiu assim?</h2>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">😤</div>
+                    <h3>Quer ganhar uma renda extra, mas está perdido sem saber como?</h3>
+                    <p>Você deseja aumentar sua renda, mas não sabe qual caminho seguir ou como dar o primeiro passo para criar um negócio lucrativo.</p>
                 </div>
-                <div class="story-image">
-                    <!-- ALTERAR PARA IMAGEM REAL -->
-                    <img src="assets/images/hero-image.jpg" alt="Foto do criador da Template Academy" style="width: 100%; border-radius: 10px;">
+                
+                <div class="problem-card">
+                    <div class="problem-icon">🤯</div>
+                    <h3>Falta tempo para aprender programação e vender sites?</h3>
+                    <p>Sua rotina corrida impede que você invista horas aprendendo a criar sites do zero para oferecer serviços aos clientes.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-icon">📱</div>
+                    <h3>Dificuldade em encontrar clientes para o seu negócio?</h3>
+                    <p>Você tem um serviço ou produto, mas não sabe como atrair clientes ou onde encontrá-los para vender mais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 5: SOLUÇÃO -->
+    <section class="solution-section" id="solution">
+        <div class="container">
+            <h2 class="section-title">Template Academy</h2>
+            <div class="solution-content">
+                <div class="solution-text">
+                    <h3>A Solução para Vender seu Primeiro Site</h3>
+                    <p>O <strong> Template Academy</strong>  um curso prático onde você aprende a criar e vender sites profissionais usando templates prontos, sem complicação técnica.</p>
+                    
+                    <div class="method-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Entenda o Básico</h4>
+                                <p>Sem jargões técnicos, só o que você precisa saber</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Use o Template Pronto para Entregar Rápido</h4>
+                                <p>Passo a passo para personalizar com sua marca</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Publique e Venda</h4>
+                                <p>Site no ar e otimizado para converter clientes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-visual">
+                    <div class="before-after">
+                        <div class="before">
+                            <h4>❌ Antes</h4>
+                            <ul>
+                                <li>Invisível no Google</li>
+                                <li>Dependente do Instagram</li>
+                                <li>Perdendo clientes</li>
+                            </ul>
+                        </div>
+                        <div class="after">
+                            <h4>✅ Depois</h4>
+                            <ul>
+                                <li>Site profissional</li>
+                                <li>Aparece no Google</li>
+                                <li>Vendas 24/7</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SEÇÃO 5: PITCH -->
-    <section class="pitch-section" id="pitch">
+    <!-- SEÇÃO 6: MÓDULOS DO CURSO -->
+    <section class="modules-section" id="modules">
         <div class="container">
-            <h2 class="section-title">Apresento: Template Academy</h2>
-            <div class="pitch-content">
-                <div class="pitch-benefits">
-                    <h3>Com nosso método você vai conseguir:</h3>
-                    <ul class="benefits-list">
-                        <li>✅ Templates otimizados para SEO, garantindo visibilidade nos motores de busca</li>
-                        <li>✅ Sites feitos com as melhores e mais responsivas tecnologias da atualidade</li>
-                        <li>✅ Design moderno e pronto para mobile, usado por grandes empresas como Meta e Facebook</li>
-                        <li>✅ Resultados rápidos e profissionais sem complicações técnicas</li>
+            <h2 class="section-title">O Que Você Vai Aprender</h2>
+            <div class="modules-grid">
+                
+                <div class="module-card">
+                    <div class="module-number">Módulo 1</div>
+                    <h3>Introdução</h3>
+                    <ul>
+                        <li>Como usar a área de membros</li>
+                        <li>Por que presença digital é essencial hoje</li>
+                        <li>Como este curso vai simplificar sua jornada</li>
                     </ul>
+                    <p class="module-goal">🎯 Criar conexão e mostrar que é possível</p>
                 </div>
-                <div class="pitch-visual">
-                    <div class="product-showcase">
-                        <div class="templates-slider" id="templatesSlider">
-                            <img src="assets/images/template1.png" alt="Template Moderno - React + Tailwind" class="template-slide active">
-                            <img src="assets/images/template2.png" alt="Template Empresarial - Responsivo" class="template-slide">
-                            <img src="assets/images/template3.jpg" alt="Template E-commerce - SEO Otimizado" class="template-slide">
-                            <img src="assets/images/template4.jpg" alt="Template Landing Page - Conversão" class="template-slide">
-                            <img src="assets/images/template5.jpg" alt="Template Blog - Performance" class="template-slide">
-                        </div>
-                        <div class="slide-indicators">
-                            <span class="dot active" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                            <span class="dot" onclick="currentSlide(4)"></span>
-                            <span class="dot" onclick="currentSlide(5)"></span>
-                        </div>
-                    </div>
+                
+                <div class="module-card">
+                    <div class="module-number">Módulo 2</div>
+                    <h3>Fundamentos Rápidos</h3>
+                    <ul>
+                        <li>O que é um site simples e o que precisa ter</li>
+                        <li>Diferenças entre site, landing page e loja</li>
+                        <li>Ferramentas gratuitas e acessíveis</li>
+                    </ul>
+                    <p class="module-goal">🎯 Quebrar objeções técnicas</p>
                 </div>
+                
+                <div class="module-card featured">
+                    <div class="module-number">Módulo 3</div>
+                    <h3>Mão na Massa</h3>
+                    <ul>
+                        <li>Como usar o template pronto</li>
+                        <li>Personalização rápida - cores, logo, textos</li>
+                        <li>Como publicar e visualizar seu site</li>
+                    </ul>
+                    <p class="module-goal">🏆 Primeira vitória: site funcionando!</p>
+                </div>
+                
+                <div class="module-card">
+                    <div class="module-number">Módulo 4</div>
+                    <h3>Site que Vende</h3>
+                    <ul>
+                        <li>Estrutura para atrair clientes</li>
+                        <li>Páginas essenciais (Home, Sobre, Contato)</li>
+                        <li>Otimização para celular</li>
+                    </ul>
+                    <p class="module-goal">💰 Site que converte visitantes em clientes</p>
+                </div>
+                
+                <div class="module-card">
+                    <div class="module-number">Módulo 5</div>
+                    <h3>Próximos Passos</h3>
+                    <ul>
+                        <li>Como divulgar no WhatsApp e redes sociais</li>
+                        <li>Caminhos para evoluir (Instagram, Pix)</li>
+                        <li>Acesso à comunidade exclusiva</li>
+                    </ul>
+                    <p class="module-goal">🚀 Crescimento contínuo</p>
+                </div>
+                
             </div>
         </div>
     </section>
 
-    <!-- SEÇÃO 6: EVIDÊNCIAS -->
+    <!-- SEÇÃO 7: EVIDÊNCIAS -->
     <section class="evidence-section" id="evidence">
         <div class="container">
-            <h2 class="section-title">Veja o Que Nossos Clientes Estão Dizendo</h2>
+            <h2 class="section-title">Resultados Reais de Quem Já Fez</h2>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-image">
-                        <p>Foto</p>
+                        <div class="avatar">👩‍💼</div>
                     </div>
                     <p class="testimonial-text">
-                        "Resultado incrível! Em apenas 15 dias já vi mudanças significativas..."
+                        "Em 1 dia meu site estava no ar! Já recebi 3 orçamentos só na primeira semana."
                     </p>
-                    <p class="testimonial-author">- Maria Silva, São Paulo</p>
+                    <p class="testimonial-author">- Carla Mendes, Consultora</p>
                 </div>
                 
                 <div class="testimonial-card">
                     <div class="testimonial-image">
-                        <p>Foto</p>
+                        <div class="avatar">👨‍🍳</div>
                     </div>
                     <p class="testimonial-text">
-                        "Nunca pensei que seria tão fácil. Recomendo para todos!"
+                        "Antes só vendia pelo WhatsApp. Agora apareço no Google e dobrei as vendas!"
                     </p>
-                    <p class="testimonial-author">- João Santos, Rio de Janeiro</p>
+                    <p class="testimonial-author">- Roberto Silva, Chef</p>
                 </div>
                 
                 <div class="testimonial-card">
                     <div class="testimonial-image">
-                        <p>Foto</p>
+                        <div class="avatar">👩‍⚕️</div>
                     </div>
                     <p class="testimonial-text">
-                        "Mudou minha vida completamente. Valeu cada centavo!"
+                        "Economizei R$ 3.000 que uma agência queria cobrar. Site ficou lindo!"
                     </p>
-                    <p class="testimonial-author">- Ana Costa, Brasília</p>
+                    <p class="testimonial-author">- Dra. Ana Costa, Dentista</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SEÇÃO 7: OFERTA -->
+    <!-- SEÇÃO 8: OFERTA -->
     <section class="offer-section" id="offer">
         <div class="container">
-            <h2 class="section-title">Oferta Especial - Por Tempo Limitado</h2>
+            <h2 class="section-title">Oferta Especial - Últimas Vagas</h2>
             <div class="offer-box">
                 <div class="price-container">
-                    <p class="original-price">De: <span>R$ 497,00</span></p>
-                    <p class="current-price">Por apenas: <span>R$ 47,90</span></p>
+                    <p class="original-price">Valor normal: <span>R$ 297,00</span></p>
+                    <p class="current-price">Hoje apenas: <span>R$ 97,00</span></p>
+                    <p class="economy">💰 Você economiza R$ 200</p>
                 </div>
                 
                 <div class="countdown-timer" id="countdown">
-                    <p>Oferta expira em:</p>
+                    <p>Esta oferta expira em:</p>
                     <div class="timer">
-                        <span id="hours">00</span>h
-                        <span id="minutes">00</span>m
-                        <span id="seconds">00</span>s
+                        <span id="hours">23</span>h
+                        <span id="minutes">47</span>m
+                        <span id="seconds">32</span>s
                     </div>
                 </div>
                 
                 <div class="bonuses">
-                    <h4>🎁 Bônus Exclusivos:</h4>
+                    <h4>🎁 Bônus Exclusivos (Valor R$ 347):</h4>
                     <ul>
-                        <li>✅ Pack com 9 Templates Profissionais (Valor: R$ 197)</li>
-                        <li>✅ 30 Prompts (IA) para Acelerar o processo (Valor: R$ 97)</li>
-                        <li>✅ Checklist de Publicação (Valor: R$ 47)</li>
+                        <li>✅ 5 Templates Profissionais Prontos (R$ 197)</li>
+                        <li>✅ Checklist de Lançamento Completo (R$ 97)</li>
+                        <li>✅ 30 Dias na Comunidade Exclusiva (R$ 97)</li>
                     </ul>
+                    <p class="bonus-total"><strong>Total em bônus: R$ 391</strong></p>
                 </div>
                 
                 <button class="btn-buy" onclick="redirectToBuy()">
-                    💻 Liberar Meu Acesso Imediato
+                    🚀 Quero Criar Meu Site Hoje
                 </button>
                 
                 <div class="guarantee">
-                    <p>🛡️ <strong>Garantia de 7 dias</strong> - você coloca seu site no ar ou devolvemos seu dinheiro</p>
+                    <p>🛡️ <strong>Garantia de 7 dias</strong> - Não funcionou? Devolvemos 100% do seu dinheiro</p>
+                </div>
+                
+                <div class="payment-options">
+                    <p>💳 <strong>Pagamento seguro:</strong> Cartão, PIX ou Boleto</p>
+                    <p>🔓 <strong>Acesso imediato</strong> após a confirmação</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SEÇÃO 8: FAQ -->
+    <!-- SEÇÃO 9: FAQ -->
     <section class="faq-section" id="faq">
         <div class="container">
-            <h2 class="section-title"> Q&A (Perguntas Frequentes)</h2>
+            <h2 class="section-title">Perguntas Frequentes</h2>
             <div class="faq-list">
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFaq(this)">
-                        <span>Não sei nada de tecnologia, vou conseguir?</span>
+                        <span>Não entendo nada de tecnologia, vou conseguir?</span>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Sim! O método foi criado especialmente para quem não entende nada de site. Com alguns passos simples. Se você usa celular, vai conseguir criar seu site.</p>
+                        <p>SIM! O curso foi criado especificamente para quem não tem conhecimento técnico. Se você consegue usar WhatsApp, consegue criar seu site seguindo nosso passo a passo.</p>
                     </div>
                 </div>
                 
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFaq(this)">
-                        <span>Quanto tempo leva para ter meu site pronto?</span>
+                        <span>Em quanto tempo meu site fica pronto?</span>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Em 3 horas você já tem seu site funcionando! O template está pronto, você só personaliza com suas informações. Alguns alunos terminaram em 2 horas e já estão a divulgando.</p>
+                        <p>Em média 3-4 horas! O template já está pronto, você só personaliza com suas informações. Muitos alunos terminam no mesmo dia.</p>
                     </div>
                 </div>
                 
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFaq(this)">
-                        <span>Preciso pagar mensalidade depois?</span>
+                        <span>Vou ter que pagar mensalidade depois?</span>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Não! Você paga apenas uma vez pelo curso. Depois ensino como usar ferramentas gratuitas para manter seu site no ar sem custo mensal. Investimento único de R$ 19,90.</p>
+                        <p>NÃO! Ensinamos como usar ferramentas gratuitas para manter seu site no ar sem custo mensal. Investimento único de R$ 97.</p>
                     </div>
                 </div>
 
@@ -246,7 +334,7 @@
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Você não fica sozinho! Além das vídeo-aulas detalhadas, tem a area de membros exclusiva onde eu e outros alunos ajudamos. Garantia de 7 dias, não conseguiu? Devolvemos seu dinheiro.</p>
+                        <p>Sim! Além das aulas detalhadas, você tem acesso à nossa comunidade onde eu e outros alunos ajudamos. Garantia total de 7 dias.</p>
                     </div>
                 </div>
 
@@ -256,7 +344,7 @@
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Sim! Ensino configurações básicas para seu site ser encontrado no Google. Não é mágica, mas você vai aparecer quando as pessoas procurarem seu negócio na sua cidade.</p>
+                        <p>Sim! Ensinamos as configurações essenciais para seu site ser encontrado no Google quando as pessoas procurarem seu negócio.</p>
                     </div>
                 </div>
 
@@ -264,23 +352,24 @@
         </div>
     </section>
 
-    <!-- SEÇÃO 9: CTA FINAL -->
+    <!-- SEÇÃO 10: CTA FINAL -->
     <section class="final-cta-section" id="final-cta">
         <div class="container">
-            <h2>Agora é sua vez de decidir</h2>
-            <p>Enquanto você pensa, seu concorrente aparece no Google. Faça a escolha inteligente.</p>
+            <h2>Sua Presença Digital Começa Hoje</h2>
+            <p>Enquanto você pensa, seus concorrentes estão vendendo online. Não perca mais tempo.</p>
             <button class="btn-buy-final" onclick="redirectToBuy()">
-                Quero meu site funcionando agora
+                Criar Meu Site Agora - R$ 97
             </button>
-            <p class="urgency-text">⏰ Últimas vagas antes do encerramento</p>
+            <p class="urgency-text">⏰ Últimas 10 vagas com desconto</p>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 - Template Academy - Todos os direitos reservados</p>
-            <p><a href="politica.html">Política de Privacidade</a> | <a href="termos.html">Termos de Uso</a></p>
+            <img src="assets/images/Logo.webp" alt="Logo Template Academy" class="logo">
+            <p>© 2025 - Template Academy - Todos os direitos reservados</p>
+            <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
         </div>
     </footer>
 
